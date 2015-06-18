@@ -1,0 +1,39 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "npm file for creating the basic structure of a web project.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Hugoer/initialize_webproject.git"
+  },
+  "keywords": [
+    "bower",
+    "gulp",
+    "npm"
+  ],
+  "author": "Hugoer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hugoer/initialize_webproject/issues"
+  },
+  "homepage": "http://www.hugoer.com",
+  "dependencies": {
+    "bower": "~1.4.1",
+    "bower-installer": "~1.2.0",
+    "gulp": "~3.8.11",
+    "gulp-concat": "~2.5.2",
+    "gulp-uglify": "~1.1.0",
+    "gulp-sass": "~1.3.3",
+    "gulp-add-src": "~0.2.0",
+    "gulp-clean": "~0.3.1",
+    "gulp-notify": "~2.2.0",
+    "gulp-plumber": "~1.0.0",
+    "gulp-chmod": "~1.2.0",
+    "sass-convert": "~0.5.0",
+    "gulp-autoprefixer" : "~2.2.0",
+    "gulp-angular-htmlify": "~2.3.0",
+    "gulp-if": "~1.2.5",
+    "gulp-minify-css" : "~1.1.6",
+    "gulp-sourcemaps":"~1.5.2"
+  }
+}
