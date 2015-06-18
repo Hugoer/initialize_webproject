@@ -1,4 +1,5 @@
-//Bootstrap
+/*===========VENDOR===========*/
+//Bootstrap core
 @import "vendor/bootstrap-sass/variables";
 @import "vendor/bootstrap-sass/mixins";
 @import "vendor/bootstrap-sass/normalize";
@@ -7,11 +8,18 @@
 @import "vendor/bootstrap-sass/grid";
 @import "vendor/bootstrap-sass/responsive-utilities";
 @import "vendor/bootstrap-sass/utilities";
-
+//Bootstrap plugins
 @import "vendor/bootstrap-sass/component-animations";
 @import "vendor/bootstrap-sass/modals";
 @import "vendor/bootstrap-sass/tooltip";
 @import "vendor/bootstrap-sass/wells";
 
-//Flexbox
-@import "vendor/sass-flex-mixin/flexbox";
+/*===========MODULE===========*/
+@import "module/config";
+@import "module/mixins";
+@import "module/colors";
+@import "module/buttons";
+@import "module/icons";
+
+/*===========PARTIALS===========*/
+@import "partials/index";
