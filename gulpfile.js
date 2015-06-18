@@ -3,15 +3,12 @@ var gulp = require('gulp'),
     addsrc = require('gulp-add-src'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
     minifyCss = require('gulp-minify-css'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
-    autoprefixer = require('gulp-autoprefixer'),
-    htmlify = require('gulp-angular-htmlify'),
     notify = require('gulp-notify'),
-    plumber = require('gulp-plumber'),
-    chmod = require('gulp-chmod'),
-    clean = require('gulp-clean');
+    plumber = require('gulp-plumber');
 
 /*CONFIG*/
 var config = { 
