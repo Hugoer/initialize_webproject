@@ -55,7 +55,22 @@ var onError = function (err) {
         .pipe(gulpif( (config.develop === false) , sourcemaps.init() ))
         .pipe(plumber({ errorHandler: onError }))
         .pipe(concat('default.js'))
-        .pipe(gulpif( (config.develop === false) , uglify()))
+        .pipe(uglify({
+            output: { // http://lisperator.net/uglifyjs/codegen
+                beautify: (config.develop === false),
+                comments: false ,
+            },
+            compress: { // http://lisperator.net/uglifyjs/compress, http://davidwalsh.name/compress-uglify
+                sequences: true,
+                booleans: true,
+                conditionals: true,
+                hoist_funs: true,
+                hoist_vars: true,
+                warnings: true,
+            },
+            mangle: false,
+            outSourceMap: (config.develop === false)
+        }))
         .pipe(gulpif( (config.develop === false) , sourcemaps.write('default.js.map') ))
         .pipe(gulp.dest("./public"));
     });
